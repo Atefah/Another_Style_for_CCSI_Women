@@ -3,7 +3,8 @@
 	padding:0;
 	overflow-y: scroll;
 	box-sizing:border-box;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: 'Poppin';
+	
 }
 
 body p{
@@ -22,12 +23,12 @@ body p{
 	border-radius: 15%;
 	margin: 12px auto;
 	}
-/* h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5{
 	font-size: 2.5rem;
 	font-weight: bold;
 	text-align: center;
 	letter-spacing: 3px;
-} */
+}
 
 .clr{
 	clear: both;
@@ -40,12 +41,15 @@ body p{
 .logo { width: 300px;}
 
 #navbar_top  a{
-	color:rgb(235, 101, 29);
+	color:#ffc100;
+/* color: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));; */
+	font-weight: bold;
+
 
   }
   #navbar_top a.active {
 	color: rgb(225, 91, 19);
-	font-weight: bold;
+	
   }
   #navbar_top a:hover {
 	color: rgb(235, 101, 29);
@@ -67,8 +71,8 @@ body p{
 
 /* footer style*/
 footer{
-	background-image: linear-gradient(to right, white 50%, rgba(234,196,175,255));
-	
+	/* background-image: linear-gradient(to right, white 50%, rgba(234,196,175,255)); */
+	background-image: linear-gradient(to right, #f9c291, #ffb7aa, #fcb3c8, #e2b7e0, #c0beea, #a6c6ee, #91cce7, #8ad0d9, #90d6c9, #a6d9b5, #c6d9a3, #e8d59b);
 }
 .footer-logo{
     width:100%;
@@ -76,18 +80,19 @@ footer{
 /* end footer style*/
 
 /*index.html*/
-
 .hero{
-	width: 100%;
-	min-height: 150hv;
-	background-image: url(../img/background.jpeg);
-	background-position: cover;
-	background-size: cover;
-	/* background-color: rgba(234,196,175,255); */
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('.././img/background\ women1-01.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-	padding: 10px 10%;
-	overflow: hidden;
-	position: relative;
   }
 .btn{
 		display: inline-block;
@@ -107,28 +112,29 @@ footer{
 
 
   .content{
-	margin-top: 8%;
-	padding: 0 30px;
-	max-width: 600px;
-
-	padding-bottom: 50px;
+	/* margin-top: 8%; */
+	margin: 200px auto;
+	padding: 0 400px;
+	/* max-width: 800px; */
+	/* padding-bottom: 50px; */
 
   }
   .content h6{
 	font-size: 70px;
 	color: transparent;
 	background-position: center;
-	-webkit-background-clip: text;
-	background-image: linear-gradient(90deg, #50adfe ,rgb(231, 139, 89));
+	color: white;
+	/* -webkit-background-clip: text; */
+	/* background-image: linear-gradient(90deg, #50adfe ,rgb(231, 139, 89)); */
 
   }
   .content p{
-	margin: 10px 0px 30px;
-	color: #333;
+	/* margin: 10px 0px 30px; */
+	color: white;
 	animation-delay: 0.5s;
   }
   .feature-image{
-	width: 530px;
+	/* width: 530px; */
 	height: 400px;
 	position: absolute;
 	bottom: 10px;
@@ -276,6 +282,7 @@ footer{
   color: #545454;
   line-height: 30px;
   text-align: justify;
+ 
   }
   .profile{
    background: white;

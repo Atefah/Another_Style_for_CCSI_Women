@@ -12,7 +12,24 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-    
+     .btn{
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 40px;
+      color:#025196;
+    font-size: large;
+      font-weight: bold;
+      background-color: #fffff7;
+      border: 2px solid #699eca;
+      text-align: center;
+      border-radius: 30px;
+      border-top-right-radius: 0;           
+      transition: 0.5s;
+      animation-delay: 1s;
+    }
+    .btn:hover{
+      border-top-right-radius: 30px;
+    }
       .containerTeam{
         width: 100%;
         margin:0 auto;
@@ -170,22 +187,6 @@
       }
    
 
-      .btn{
-        display: inline-block;
-        text-decoration: none;
-        padding: 14px 40px;
-        color: #fff;
-        background-image: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));
-        font-size: 16px;
-        border-radius: 30px;
-        border-top-right-radius: 0;           
-        transition: 0.5s;
-        animation-delay: 1s;
-	}
-	.btn:hover{
-	  border-top-right-radius: 30px;
-  }
-
 
 .content-right img{
     width: 250px;
@@ -195,7 +196,6 @@
 }
 .ModalContent{
     display: flex;
-    
     justify-content: center;
    align-items: center;
     margin: 5% auto;
@@ -235,47 +235,49 @@
   transform: translateX(0px);
 }
 
-#modal1{
+/* #modal1{
   border: 2px solid orange;
-}
+} */
     </style>
 </head>
 <body onscroll="reswize()">     
     <!-- header  -->
-    <header class="hero">    
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+    <header>    
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark b">
         <div class="container">
           <a class="navbar-brand" href="#" >
             <img  src="img/Finalized of CCSI Women done.png" alt="" id="logo" class="logo">
           </a>
           <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="nav">
               <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="https://ccsi.global/">CCSI Family
+                  <a class="nav-link" href="https://ccsi.global/" id="link">CCSI Family
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">About</a>
+                  <a class="nav-link " href="index.html" id="link">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="LeaderShipAndExpirts.html">Leadership & Experts</a>
+                  <a class="nav-link active" href="LeaderShipAndExpirts.html" id="link">Leadership & Experts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="contact.html">Contact</a>
+                  <a class="nav-link " href="contact.html" id="link">Contact</a>
                 </li>
               </ul>
           </div>
       </div>
       </nav>
+  
+     <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
+    </header>
+    <div class="hero">
       <div class="content">
-        <h6 class="anim">LEADERSHIP AND  EXPERTS </h6>
+        <h6 class="anim">LeaderShip And Expirts</h6>
+      </div> 
     </div>
-      <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
-     </header>
-
     <div class="hidd" style="height:150px;"></div>
     <section class="ourTeam">
         <div class="containerTeam">
@@ -386,7 +388,7 @@
     <div class="hidd" style="height:150px;"></div>
     <footer>
       <div class="container-fluid">
-          <div class="row">
+          <div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
                   <div>
                       <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
